@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--This is the head where I add the Meta data and CSS links-->
+    <title>Would you date Millie?</title>
+
+    <!--This is the head where I add the Meta data and CSS links-->
+    <title>{{page.title}}</title>
+
+    <!--This is Font Awesome  https://fontawesome.io  https://cdnjs.com/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Nixie+One|Patua+One|Rammetto+One|Fjalla+One|Merriweather|Roboto:900|Source+Sans+Pro" rel="stylesheet">
+
+    <!--Gridlex-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+
+    <!--Stylesheet: Always at the bottom-->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <!--This allows the browser to remember the screensize and knows when to change when on the phone-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    {{content}}
+
+    <footer>
+      <div>
+        <img src="INSERT IMAGE HERE WHEN DONE"/>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+    </footer>
+
+  </body>
+</html>
