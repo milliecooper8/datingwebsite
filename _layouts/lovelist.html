@@ -1,3 +1,29 @@
 ---
 layout: default
 ---
+<section class="love-list-banner">
+  <h1>
+    {{ page.title }}
+  </h1>
+</section>
+<div class="grid">
+  <aside class="love-list-details col-4">
+    <p>
+      {{ page.rating }}
+    </p>
+    <p>
+      {{ page.price }}
+    </p>
+    <p>
+      {{ page.address }}
+    </p>
+  </aside>
+  <section class="col-8">
+    <p>
+      {{ page.content }}
+    </p>
+  </section>
+  <section class="col-12">
+    <iframe src="{{ page.map }}" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
+</div>

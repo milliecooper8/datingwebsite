@@ -16,38 +16,58 @@ img{
 
 /*----Universal styles----*/
 h1 {
-  font-size: 50px;
-  font-family: 'Rammetto One', cursive;
+  font-size: 90px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  letter-spacing: -3px;
 }
 
 h2 {
-  font-size: 25px;
-  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 39px;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+h5 {
+  font-size: 17px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
 }
 
 p {
-  font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  line-height: 22px;
 }
 
-.no-padding {
-  padding: 0;
+[class*=grid]{
+  margin: 0;
 }
 
-.padding {
-  padding: 0vh 10vw;
+.col, [class*=col-] {
+  padding: 0px;
 }
 
-.paddingright {
-  padding-right: 10vw;
-}
-
-.paddingleft {
-  padding-left: 10vw;
-}
-
-.fullheight {
-  min-height: 100vh;
+.home-background {
+  background-image: url(../images/Millie_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*----Header-------*/
@@ -55,20 +75,84 @@ header {
   height: 80px;
 }
 
-.centreheight {
-  padding-top: 50vh;
-  padding-bottom: 50vh;
+.banner {
+  min-height: calc(100vh - 80px);
 }
 
-.banner {
-  height: calc(100vh - 80px);
+
+/*--- Features -----*/
+.feature {
+  height: 100vh;
+}
+
+.feature-content-right {
+  background-color: #011b46;
+  color: white;
+}
+
+/*--- Gallery ---*/
+.gallery {}
+
+.gallery-image {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.gallery-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-overlay p {
+  text-align: center;
+  background-color: #2dfff4;
+
+}
+
+/*--- Quotes ---*/
+.quote {
+  font-size: 2.0em;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/*--- Love List ---*/
+.love-list {
+  text-align: center;
+}
+
+.love-list h4 {
+  padding-bottom: 10px;
+}
+
+.love-list a {
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
 }
 
 /*---Keen-----*/
 .keencta {
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  background-color: #f5f5f5;
+}
+
+.keencta h2 {
+  color: #011b46;
+}
+
+
+/*---Features-----*/
+.numbers {
+  text-align: right;
+  padding-right: 1vw;
+  font-size: 40px;
+  color: #2dfff4;
 }
 
 
