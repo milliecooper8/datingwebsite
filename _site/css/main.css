@@ -102,6 +102,18 @@ a {
   margin-bottom: 40px;
 }
 
+.home-title-1 {
+    font-size: 0.35em;
+    letter-spacing: normal;
+}
+
+.home-title-2 {
+    color: #24c7bf;
+    margin-top: -30px;
+    font-size: 0.5em;
+    letter-spacing: normal;
+}
+
 a {
   text-decoration: none;
   transition: all 1s ease;
