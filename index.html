@@ -1,35 +1,36 @@
 ---
 layout: default
 gallery:
-  - title: Hello
-    image: /images/Millie_1.jpg
-  - title: Bye
-    image: /images/Millie_1.jpg
-  - title: Hi again
-    image: /images/Millie_1.jpg
+  - title: Heaps of mates
+    image: /images/friends.jpg
+  - title: Piss cutting legend
+    image: /images/drinking.jpg
+  - title: Solo gazing
+    image: /images/rice.jpg
 ---
 
 
 <body class="home-background">
     <!--Opening splash page-->
-    <section class="grid-middle banner">
-      <div class="col-6 banner padding grid-middle">
-        <h1 class="col">Hello</h1>
-      </div>
-
-      <div class="col-6 banner padding grid-middle">
-        <h1 class="col topright">World.</h1>
+    <section class="banner padding-indent">
+      <div class="banner-content">
+        <div class="padding">
+          <h1>Hello.</h1>
+        </div>
+        <div>
+          <a class="button" href="">Holla at me</a>
+        </div>
       </div>
     </section>
 
     <!--First state-->
-    <section class="grid feature">
-      <div class="col-6">
+    <section id="feature-1" class="grid feature">
+      <div class="col-6_md-12_sm-12 catch-image" style="background-image: url(/images/cindy.jpg)">
       </div>
 
-      <div class="col-6 grid-middle feature-content-right">
-        <h5 class="">CATCH NUMBER 1 ></h5>
-        <h2 class="">Millie Cooper is based in Sydney, Australia.</h2>
+      <div class="col-6_md-12_sm-12 feature-content-right">
+        <h5>CATCH NUMBER 1 ></h5>
+        <h2>Millie Cooper is based in Sydney, Australia.</h2>
         <h4>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minicepte.
         </h4>
@@ -39,7 +40,7 @@ gallery:
 
     <!--Second state-->
     <section class="grid feature">
-      <div class="col-6 grid-middle">
+      <div class="col-6_md-12_sm-12 feature-content-left">
         <h5 class="">CATCH NUMBER 2 ></h5>
         <h2 class="">On the look out for the man of her dreams.</h2>
         <h4>
@@ -47,7 +48,7 @@ gallery:
         </h4>
       </div>
 
-      <div class="sadface col-6">
+      <div class="col-6_md-12_sm-12 catch-image" style="background-image: url(/images/bro.jpg)">
       </div>
     </section>
 
@@ -57,36 +58,42 @@ gallery:
     </section>
 
     <!--Why date Millie? Features section 3 column-->
-    <section class="grid padding threegridheight">
-      <div class="col-4 grid">
-        <h3 class="col-3 numbers">01</h3>
-        <div class="col">
-          <h5 class="paddingbottom">PLAYS BASKETBALL</h5>
+    <section id="features" class="features grid padding-indent">
+      <div class="col-4_md-12_sm-12 grid">
+        <h3 class="col-3_md-12_sm-12 numbers">01</h3>
+        <div class="col_md-12_sm-12">
+          <h5>PLAYS BASKETBALL</h5>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo t anim id est laborum.
           </p>
         </div>
       </div>
 
-      <div class="col-4 grid">
-        <h3 class="col-3 numbers">02</h3>
-        <p class="col">
+      <div class="col-4_md-12_sm-12 grid">
+        <h3 class="col-3_md-12_sm-12 numbers">02</h3>
+        <div class="col_md-12_sm-12">
+          <h5>GREAT AT HEAD</h5>
+          <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo t anim id est laborum.
-        </p>
+          </p>
+        </div>
       </div>
 
-      <div class="col-4 grid">
-        <h3 class="col-3 numbers">03</h3>
-        <p class="col">
+      <div class="col-4_md-12_sm-12 grid">
+        <h3 class="col-3_md-12_sm-12 numbers">03</h3>
+        <div class="col_md-12_sm-12">
+          <h5>AMAZING HOOKUP</h5>
+          <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo t anim id est laborum.
-        </p>
+          </p>
+        </div>
       </div>
     </section>
 
 <!--Millie in action - Gallery-->
-    <section class="grid gallery">
+    <section id="in-action" class="grid gallery">
       {% for image in page.gallery %}
-        <div class="col-4 gallery-image" style="background-image: url(../images/Millie_1.jpg);">
+        <div class="col-4_md-12_sm-12 gallery-image" style="background-image: url(..{{ image.image }}); ">
           <div class="gallery-overlay">
             <p>
               {{ image.title }}
@@ -96,18 +103,21 @@ gallery:
       {% endfor %}
     </section>
 
-<!--Millie in action - Text Gallery-->
-    <section class="padding">
-      <h2>Shit Mille Says</h2>
+<!--Millie in action - Shit Millie says-->
+    <section id="shit-millie-says" class="shit padding-indent">
+      <h5>SHIT MILLIE SAYS</h5>
       <p class="quote">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Really good at hooking up with multiple people a night. Bring on the cocktail party and breaking the student-mentor policy.
       </p>
+      <div>
+        <a href="shit-millie-says" class="call-to-action">Read more</a>
+      </div>
     </section>
 
-<!--Where to take Millie on dates - bucket list-->
-    <section class="grid love-list padding threegridheight">
+<!--Where to take Millie on dates - love list-->
+    <section id="love-list" class="lovelist grid love-list padding-indent">
       {% for lovelist in site.posts limit:3 %}
-      <div class="col-4">
+      <div class="category-block col-4_md-12_sm-12">
         <img src="{{ lovelist.image }}">
         <h4>{{lovelist.title}}</h4>
         <p>{{lovelist.intro}}</p>
@@ -117,7 +127,7 @@ gallery:
     </section>
 
 <!--Still Keen-->
-<section class="keencta">
+<section id="contact" class="keencta">
   <h2>Still keen?</h2>
 </section>
 

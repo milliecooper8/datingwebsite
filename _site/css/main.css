@@ -3,11 +3,11 @@
   margin:0;
   padding:0;
   box-sizing:0;
-  border: 1px solid yellow;
 }
 
 iframe{
   pointer-events: none;
+  display: block;
 }
 
 img{
@@ -20,6 +20,8 @@ h1 {
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
   letter-spacing: -3px;
+  color: #011b46;
+  line-height: 80px;
 }
 
 h2 {
@@ -70,7 +72,105 @@ p {
   background-attachment: fixed;
 }
 
+.padding-indent {
+  padding:5% 10% 5% 10%;
+}
+
+a {
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 /*----Header-------*/
+.logo {
+  width: 200px;
+  display:inline-block;
+}
+
+.button {
+  border: 2px solid white;
+  color: #011b46;
+  padding: 20px 30px 20px 30px;
+}
+
+.banner h1 {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 1s ease;
+}
+header {
+  background-color: none;
+  height: 60px;
+  padding: 0px 10%;
+}
+.love-list-banner {
+  margin-top: -80px;
+}
+.love-list-banner .slider-image {
+  padding-top: 150px;
+}
+
+header nav {
+  float: right;
+}
+
+header .nav-items {
+  display: flex;
+}
+.topheader nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #ffffff;
+  background-color: none;
+  display: block;
+  padding: 0 25px;
+  line-height: 100px;
+}
+
+nav a:hover {
+  color: #011b46;
+}
+
+/* Mobile nav toggle */
+.nav-button {
+  display: none;
+
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+}
+@media (max-width: 1200px) {
+  nav {
+    position: relative;
+  }
+  .nav-button {
+    display: block;
+  }
+  header .nav-items {
+    display: none;
+  }
+  .mobile-nav-active .nav-items {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+}
+
 header {
   height: 80px;
 }
@@ -79,6 +179,15 @@ header {
   min-height: calc(100vh - 80px);
 }
 
+.banner-content {
+  padding-top: 25vh;
+}
+
+/*-- Catches ---*/
+.catch-image {
+  background-size: cover;
+  background-position: center;
+}
 
 /*--- Features -----*/
 .feature {
@@ -88,6 +197,31 @@ header {
 .feature-content-right {
   background-color: #011b46;
   color: white;
+  height: 100vh;
+  padding: 25vh 10% 0;
+}
+
+.feature-content-right h5 {
+  margin-bottom: 15%;
+}
+
+.feature-content-right h2 {
+  margin-bottom: 5%;
+}
+
+.feature-content-left {
+  background-color: #2dfff4;
+  color: #011b46;
+  height: 100vh;
+  padding: 25vh 10% 0;
+}
+
+.feature-content-left h5 {
+  margin-bottom: 15%;
+}
+
+.feature-content-left h2 {
+  margin-bottom: 5%;
 }
 
 /*--- Gallery ---*/
@@ -110,15 +244,6 @@ header {
 
 }
 
-/*--- Quotes ---*/
-.quote {
-  font-size: 2.0em;
-  text-align: center;
-  text-decoration: underline;
-  font-style: italic;
-  line-height: 1.8;
-}
-
 /*--- Love List ---*/
 .love-list {
   text-align: center;
@@ -128,7 +253,7 @@ header {
   padding-bottom: 10px;
 }
 
-.love-list a {
+.love-list a,  {
   padding: 10px;
   margin: 20px;
   display: inline-block;
@@ -155,9 +280,114 @@ header {
   color: #2dfff4;
 }
 
+.features {
+  background-color: white;
+}
+
+.features h5 {
+  margin-bottom: 5%;
+}
+
+/*----Shit Millie says-------*/
+.shit {
+  background-color: white;
+  height: 40vh;
+  padding: 13vh 10% 0;
+  text-align: center;
+}
+
+@media (max-width: 922px) {
+  .shit {
+    height: auto;
+    padding: 10%;
+  }
+}
+
+.shit h5 {
+  font-size: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.shit p {
+  margin-bottom: 2rem;
+}
+
+.quote,.quote-block p {
+  font-size: 1.7em;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.call-to-action {
+  border: 2px solid white;
+  color: #011b46;
+  border-color: #011b46;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+.call-to-action:hover  {
+  background-color: white;
+  color: #2dfff4;
+}
+
 
 /*----Love list-------*/
-.threegridheight {
-  padding-top: 13vh;
-  padding-bottom: 13vh;
+.lovelist {
+  background-color: #011b46;
+  color: white;
+  margin:4vh;
+}
+
+.lovelist h4 {
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+
+.lovelist a {
+  border: 2px solid white;
+  color: #2dfff4;
+  padding: 20px 30px 20px 30px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+a:hover {
+  background-color: white;
+  color: #011b46;
+}
+
+.category-block {
+  padding: 20px;
+}
+
+/*----Footer-------*/
+.footer {
+  text-align: center;
+  font-family:'Nixie One', cursive;
+  font-size: 15px;
+  background-color: #2dfff4;
+  padding: 10vh;
+}
+
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #011b46;
+}
+
+.footer h2 {
+  margin-bottom: 0.8%;
+  color: #011b46;
+}
+
+.footer nav a {
+  line-height: 1rem;
+  padding: 0;
 }

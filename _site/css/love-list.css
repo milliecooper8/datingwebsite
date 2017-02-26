@@ -1,5 +1,44 @@
 .love-list-banner {}
 
 .love-list-banner h1 {
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: #2dfff4;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding: 50px;
+}
+
+.slider-image {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-image h1 {
+  margin-top: 75px;
+}
+
+.love-list-text p {
+  padding-bottom: 20px;
+  color: #011b46;
+}
+
+.love-list-text .lovelist-intro {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.love-list-details h5 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 14px;
+  color: #011b46;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: solid 1px #011b46;
+}
+
+.love-list-details {
+  background-color: #f5f5f5;
 }

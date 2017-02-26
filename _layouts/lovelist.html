@@ -1,24 +1,30 @@
 ---
 layout: default
 ---
+
 <section class="love-list-banner">
+  <div class="slider-image" style="background-image: url(/images/quay_slider.jpg)">
+
   <h1>
     {{ page.title }}
   </h1>
 </section>
 <div class="grid">
-  <aside class="love-list-details col-4">
-    <p>
-      {{ page.rating }}
-    </p>
-    <p>
-      {{ page.price }}
-    </p>
-    <p>
-      {{ page.address }}
-    </p>
+  <aside class="love-list-details col-4_md-12_sm-12 padding-indent">
+    <h5>
+      Rating: <p>{{ page.rating }}</p>
+    </h5>
+    <h5>
+      Price: <p>{{ page.price }}</p>
+    </h5>
+    <h5>
+      Address: <p>{{ page.address }}</p>
+    </h5>
   </aside>
-  <section class="col-8">
+  <section class="love-list-text col-8_md-12_sm-12 padding-indent">
+    <p class="lovelist-intro">
+      {{ page.intro }}
+    </p>
     <p>
       {{ page.content }}
     </p>

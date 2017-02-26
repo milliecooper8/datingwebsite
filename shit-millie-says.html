@@ -1,0 +1,49 @@
+---
+layout: default
+title: banana
+---
+<body>
+  <section class="millieisms-header">
+    <div class="millieisms-image millieisms-header" style="background-image: url(/images/girls.jpg)">
+      <h1 class="hacky-h1">The beautiful words out of Millie's mouth</h1>
+    </div>
+  </section>
+  <section class="millieisms-content grid">
+    {% for millieism in site.millieisms %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="col-2 white"></div>
+        <div class="millieism-quote padding-indent white col-8">
+            <div>{{ millieism.content }}</div>
+            <h5>{{ millieism.who}}</h5>
+            <h5>{{ millieism.when}}</h5>
+        </div>
+        <div class="col-2 white"></div>
+      {% else %}
+        <div class="col-2 grey"></div>
+        <div class="millieism-quote padding-indent grey col-8">
+          <div>{{ millieism.content }}</div>
+          <h5>{{ millieism.who}}</h5>
+          <h5>{{ millieism.when}}</h5>
+        </div>
+        <div class="col-2 grey"></div>
+      {% else %}
+      <div class="col-2 white"></div>
+      <div class="millieism-quote padding-indent white col-8">
+          <div>{{ millieism.content }}</div>
+          <h5>{{ millieism.who}}</h5>
+          <h5>{{ millieism.when}}</h5>
+      </div>
+      <div class="col-2 white"></div>
+      {% else %}
+      <div class="col-2 grey"></div>
+      <div class="millieism-quote padding-indent grey col-8">
+        <div>{{ millieism.content }}</div>
+        <h5>{{ millieism.who}}</h5>
+        <h5>{{ millieism.when}}</h5>
+      </div>
+      <div class="col-2 grey"></div>
+      {% endif %}
+    {% endfor %}
+  </section>
+</body>
